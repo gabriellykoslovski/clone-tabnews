@@ -3,8 +3,8 @@ function Home() {
     <main
       style={{
         height: "100vh",
-        backgroundImage:
-          "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Flove_background-normal.jpg&f=1&nofb=1&ipt=add32d643c5d187054e2ba40c6dfee2b6018fe1958f9fe8f5c0b48e4c48650f4')",
+        backgroundColor: "#F5BC39",
+        width: "100%",
       }}
     >
       <div
@@ -16,9 +16,28 @@ function Home() {
           height: "100%",
         }}
       >
-        <h1 style={{ color: "white" }}>Parabéns!</h1>
-        <h3 style={{ color: "white" }}>Você é o melhor namorado do mundo!!</h3>
-        <img src="https://cdn3.emoji.gg/emojis/5639-bongo-cat-love.gif" />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#faf5e8ff",
+            padding: "7rem 5rem 7rem 5rem",
+            borderRadius: "300px",
+            boxShadow: "0 0 20px rgba(0, 0, 0, 0.3)",
+          }}
+        >
+          <img
+            src="/images/warning.png"
+            style={{ width: "5rem", height: "5rem" }}
+          />
+          <h1>Em construção!</h1>
+          <h3>
+            Este site ainda está em desenvolvimento
+            <br />e em breve estará disponível, até mais!
+          </h3>
+        </div>
       </div>
     </main>
   );
