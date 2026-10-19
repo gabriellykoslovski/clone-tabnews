@@ -1,4 +1,7 @@
 import { Client } from "pg";
+import dns from "dns";
+
+dns.setDefaultResultOrder("ipv4first");
 
 async function query(queryObject) {
   const client = new Client({
@@ -7,6 +10,7 @@ async function query(queryObject) {
     user: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.POSTGRES_DB,
+    ssl: true,
   });
 
   try {
