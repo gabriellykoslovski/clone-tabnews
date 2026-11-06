@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Home() {
   return (
     <main
@@ -28,9 +30,11 @@ function Home() {
             boxShadow: "0 0 20px rgba(0, 0, 0, 0.3)",
           }}
         >
-          <img
+          <Image
             src="/images/warning.png"
-            style={{ width: "5rem", height: "5rem" }}
+            alt="Warning"
+            width={80}
+            height={80}
           />
           <h1>Em construção!</h1>
           <h3>
